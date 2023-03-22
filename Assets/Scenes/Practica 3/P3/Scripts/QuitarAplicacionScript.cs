@@ -2,19 +2,19 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RetornoMenuScript : MonoBehaviour
+public class QuitarAplicacionScript : MonoBehaviour
 {
-    public string name;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /// <summary>
@@ -39,6 +39,6 @@ public class RetornoMenuScript : MonoBehaviour
     /// </summary>
     public void OnPointerClick()
     {
-        SceneManager.LoadScene(name);
+        Application.Quit();
     }
 }
